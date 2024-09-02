@@ -16,28 +16,27 @@ a:hover {
 
 a.button,
 input[type=submit] {
-    color: white;
-    background: #019875;
-    font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-    padding: 10px 14px 12px;
-    font-size: 14px;
-    border-radius: 2px;
+    background-color: #378138;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+    margin: 0;
 }
 
-form a.button,
-input[type=submit] {
+form a.button {
     margin-left: 140px;
     transition: 0.4s;
 }
 
-input[type=submit] {
-    border: 0;
-}
-
-a.button:hover,
 input[type=submit]:hover {
-    background-color: #01b189;
+    background-color: #4ac64c;
+    transform: translateY(-2px);
 }
 
 p {
@@ -125,6 +124,10 @@ form {
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
 }
 
 form p {
@@ -186,23 +189,28 @@ button {
     transform: translateY(-2px);
 }
 
-.cancel {
+.cancel,
+.submitUpdate,
+.submitDelete {
     display: inline-block;
     background-color: #378138;
     color: white;
     padding: 10px 20px;
     border-radius: 4px;
-    font-weight: 600;
     text-align: center;
 }
 
-.cancel:hover {
+.cancel:hover,
+.submitUpdate:hover,
+.submitDelete:hover {
     background-color: #4ac64c;
     box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
     transform: translateY(-2px);
 }
 
-.cancel a {
+.cancel a,
+.submitUpdate a,
+.submitDelete a {
     color: inherit;
     text-decoration: none;
 }
